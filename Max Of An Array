@@ -1,0 +1,12 @@
+int max(int arr[], int idx, int n){
+    // write your code here
+    if(idx==n-1){
+        return arr[idx];
+    }
+    int maxi = max(arr,idx+1,n);
+    if(maxi>arr[idx])
+    {return maxi;}
+    else
+   { return arr[idx];}
+  
+}
